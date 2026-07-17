@@ -8,8 +8,9 @@ public class LargestOfTwo {
         int second = input.nextInt();
         if(first>second){
             System.out.println("first number is largest:"+first);
-        }
-        else{
+        } else if (first == second) {
+            System.out.println("both are equal");
+        } else{
             System.out.println("second number is largest:"+second);
         }
     }
