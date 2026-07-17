@@ -20,13 +20,20 @@ public class SimpleCaluculator {
                 result=first*second;
                 break;
             case "/":
-                result=first/second;
+                if(second==0){
+                    System.out.println("DIVISION WITH ZERO IS NOT POSSIBLE");
+                }
+                else {
+                    result = first / second;
+                }
                 break;
             case "%":
                 result=first%second;
                 break;
             default:
                 System.out.println("invalid operator");
+                input.close();
+                return;
         }
         System.out.println(result);
     }
