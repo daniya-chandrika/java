@@ -24,6 +24,6 @@ public class ConsecutiveCounting {
         result.append(text.charAt(length-1));
         result.append(count);
         System.out.println(result);
-
+        input.close();
     }
 }
