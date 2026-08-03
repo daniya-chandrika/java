@@ -22,5 +22,6 @@ public class DuplicateCharacters {
         }
         System.out.println("result is : "+result);
         input.close();
+
     }
 }
